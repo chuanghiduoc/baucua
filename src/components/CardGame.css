@@ -1,0 +1,66 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+}
+
+.game-container {
+  position: relative;
+}
+
+.dia {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.thau {
+  width: 95%;
+  height: auto;
+  position: absolute;
+  top: 19px;
+  left: 23px;
+  z-index: 1;
+  transition: transform 1s ease;
+}
+
+.thau.shake {
+  transform: rotate(10deg);
+}
+
+.animal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 80px;
+}
+
+.animal-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.animal {
+  width: 80px;
+  height: 80px;
+  margin: 0 10px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Đặt z-index của thau lớn hơn để nằm trên đĩa */
+.thau.covered {
+  z-index: 2;
+}
